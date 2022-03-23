@@ -1,12 +1,13 @@
-let objRaw;
+var objRaw;
+getJson()
 
-fetch("./jsonData.json")
-    .then(response => {
-        objRaw = response.json()
-        console.log(objRaw)
-    })
+async function getJson() {
+    const response = await fetch("jsonData.json");
+    const json = await response.json();
+    objRaw = json;
 
-
-
-
-getData();
+    objRaw.issues.forEach(element => {
+        if(element.fields.hasOwnProperty('parent'))
+            console.log(element.fields)
+    });
+}
