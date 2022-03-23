@@ -1,11 +1,12 @@
-let obj;
-getData();
+let objRaw;
 
-
-function getData(){
-    fetch("https://smartlifeapp.atlassian.net/rest/api/3/search?jql=ORDER%20BY%20Created")
-    .then((response) => {
-        obj = response.json();
-        console.log(obj)
+fetch("./jsonData.json")
+    .then(response => {
+        objRaw = response.json()
+        console.log(objRaw)
     })
-}
+
+
+
+
+getData();
