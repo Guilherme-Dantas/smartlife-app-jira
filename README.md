@@ -1,0 +1,1 @@
+# smartlife-app-jira
