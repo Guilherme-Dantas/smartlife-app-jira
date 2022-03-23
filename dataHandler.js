@@ -24,6 +24,7 @@ async function getJson() {
 let createTaskCard = (issue) => {
     let card = document.createElement('div');
     card.className = 'issue card shadow cursor-pointer';
+    card.id = 'cardsStories'
 
     let cardBody = document.createElement('div');
     cardBody.className = 'card-body';

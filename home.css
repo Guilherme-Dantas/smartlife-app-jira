@@ -1,0 +1,23 @@
+body {
+  margin: 45px;
+}
+
+#pageName_header {
+  font-size: 30px;
+  text-align: center;
+}
+
+#card-container {
+  padding: 80px;
+}
+
+#card_title {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  margin-top: 40px;
+}
+
+#cardsStories {
+  margin: 10px;
+}
